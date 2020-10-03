@@ -1,0 +1,67 @@
+   
+<!--
+<div class="chat-list-mask"></div>
+<div class="chat-list">
+     <ul class="chat-list-ul">
+         <li data-item="0">快点吧，我等到花儿也谢了</li>
+         <li data-item="1">我出去叫人</li>
+         <li data-item="2">你的牌好靓哇</li>
+         <li data-item="3">我当年横扫澳门九条街</li>
+         <li data-item="4">算你牛逼</li>
+         <li data-item="5">别吹牛逼，有本事干到底</li>
+         <li data-item="6">输得裤衩都没了</li>
+         <li data-item="7">我给你们送温暖了</li>
+         <li data-item="8">谢谢老板</li>
+         <li data-item="9">我来啦，让你们久等了</li>
+         <li data-item="10">我出去一下，马上回来，等我哦</li>
+         <li data-item="11">怎么断线了，网络太差了</li>
+         <li data-item="12">搏一搏，单车变摩托</li>
+     </ul>
+</div>
+-->
+
+
+
+<div class="messageBack" style="z-index: 999;"  onclick="public('message')"></div> 
+       <div class="textPartOuter" style="z-index: 999;background-color:#FFF;border:1px solid #FFF; filter:alpha(Opacity=20);-moz-opacity:0.2;opacity: 0.2;"></div> 
+    <div id="message-box" class="textPart" style="height: 260.13px; z-index: 999;border-radius:5px;">
+     <div id="scroll-box" class="textList" style="width: 100%;margin:15;border:0px solid #FFF;margin-top:10px;">
+   <!--   <div class="textItem"  style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;height:33PX;"onclick="sendmsg('玩游戏，请先进群','message1');">
+       玩游戏，请先进群
+      </div>
+      <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:10px;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX; "onclick="sendmsg('群内游戏，切勿转发','message2');">
+       群内游戏，切勿转发
+      </div>-->
+      <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:20px;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX; "onclick="sendmsg('别磨蹭，快点打牌','message3');">
+       别磨蹭，快点打牌
+      </div>
+      <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:10px;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX; "onclick="sendmsg(' 我出去叫人','message4');">
+       我出去叫人
+      </div>
+      <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:10px;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX; "onclick="sendmsg(' 你的牌好靓哇','message5');">
+       你的牌好靓哇
+      </div>
+      <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:10px;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX; "onclick="sendmsg(' 我当年横扫澳门五条街','message6');">
+       我当年横扫澳门五条街
+      </div>
+      <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:10px;height:33PX;height:33PX;height:33PX;height:33PX;height:33PX; "onclick="sendmsg(' 算你牛逼','message7');">
+       算你牛逼
+      </div>
+      
+      <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:10px; height:33PX;height:33PX;height:33PX;"onclick="sendmsg(' 输得裤衩都没了','message9');">
+       输得裤衩都没了
+      </div>
+     <!--  <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:10px;height:33PX;height:33PX; "onclick="sendmsg(' 我给你们送温暖了','message10');">
+       我给你们送温暖了
+      </div>
+       <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:10px;height:33PX;height:33PX;height:33PX;height:33PX; "onclick="sendmsg(' 别跟我抢庄','message8');">
+       别跟我抢庄
+      </div>
+      <div class="textItem" style="opacity: 0.9;border-radius:50px;background:#e3e7d6;COLOR:#000;margin-top:10px; height:33PX;"onclick="sendmsg(' 谢谢老板','message11');">
+       谢谢老板
+      </div>-->
+     </div>
+    </div>
+    <script>
+    overscroll(document.querySelector('.textPart'));
+    </script>

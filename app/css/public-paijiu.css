@@ -1,0 +1,292 @@
+
+
+.sound {
+    display: none;
+    z-index: 99999999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -40vw;
+    margin-top: -25vw;
+    width: 80vw;
+    height: 50vw;
+}
+.sound-close {
+    position: absolute;
+    right: -4vw;
+    top: -4vw;
+    width: 12vw;
+    height: 12vw;
+    background: url("/themes/game/Public/zhongyi/img/gb_btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+.sound-bg {
+    width: 100%;
+    height: 100%;
+    background: url("/themes/game/Public/zhongyi/img/chat_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.sound-bg:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10.22vw;
+    left: 0;
+    top: 1vw;
+    background: url("/themes/game/Public/zhongyi/img/bg_topline_phb.png") no-repeat center center;
+    background-size: 45.5vw 10.22vw;
+}
+.sound-setting {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5.22vw;
+    top: 2vw;
+    text-align: center;
+    color: #fcfc40;
+    font-size: 5.5vw;
+    font-family: 宋体;
+}
+.sound-setting:before{
+    content: "设 置";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5.22vw;
+    text-align: center;
+    color: #fcfc40;
+    font-size: 5.5vw;
+    font-family: 宋体;
+}
+.sound-box {
+    position: absolute;
+    padding: 10%;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    height: 10vw;
+    box-sizing: border-box;
+}
+.sound-box .sound-title {
+    color: #b67b23;
+    float: left;
+}
+.sound-box .sound-progress {
+    float: left;
+    width: 55%;
+    height: 5vw;
+    margin-left: 2vw;;
+    background: url("/themes/game/Public/zhongyi/img/progress_bg.png") no-repeat center center;
+    background-size: 100% 4vw;
+    position: relative;
+    overflow: visible;
+}
+.sound-box .sound-progress .sound-progress-con {
+    background: url("/themes/game/Public/zhongyi/img/progress_con.png") no-repeat 0 0;
+    background-size: 52vw 4vw;
+    width: 0;
+    height: 5vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sound-box .sound-progress .sound-drag {
+    width: 6vw;
+    height: 6vw;
+    background: url("/themes/game/Public/zhongyi/img/XuanDian.png") no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -0.5vw;
+}
+.sound-box .music, .sound-box .sounds {
+    width: 7vw;
+    height: 7vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-left: 1vw;
+    margin-top: -1vw;
+    position: relative;
+}
+.sound-box .music.on {
+    background-image: url("/themes/game/Public/zhongyi/img/music_open.png");
+}
+.sound-box .music.close {
+    background-image: url("/themes/game/Public/zhongyi/img/music_close.png");
+}
+.sound-box .sounds.on {
+    background-image: url("/themes/game/Public/zhongyi/img/sound_open.png");
+}
+.sound-box .sounds.close {
+    background-image: url("/themes/game/Public/zhongyi/img/sound_close.png");
+}
+
+.chat-list-mask, .sound-mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999998;
+    background-color: rgba(0,0,0,.4);
+}
+
+.chat-list {
+    display: none;
+    position: fixed;
+    right: 2vw;
+    bottom: 9vh;
+    z-index: 99999999;
+    width: 60vw;
+    height: 79vw;
+    border: .1vw solid #919191;
+    -webkit-border-radius: 3vw;
+    -moz-border-radius: 3vw;
+    border-radius: 3vw;
+    transition: display 1s;
+    background-color: rgba(255,255,255,.2);
+}
+
+.chat-list-ul {
+    width: 56vw;
+    height: 74.8vw;
+    overflow-x: hidden;
+    margin: 2vw;
+    padding: .5vw 2vw .5vw 2vw;
+    background-color: #c6b192;
+    -webkit-border-radius: 3vw;
+    -moz-border-radius: 3vw;
+    border-radius: 3vw;
+}
+
+.chat-list li {
+    height: 8vw;
+    line-height: 8vw;
+    margin: 1.2vw 0 1vw 0;
+    padding: 0 1vw;
+    color: #bb7d53;
+    font-size: 3.6vw;
+    text-align: left;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    border-radius: 2vw;
+    background-color: #fdf9ef;
+}
+
+
+.room-gameover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.room-gameover-ten {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-color: #000;
+}
+
+
+
+.search-number-box {
+    position: absolute;
+    z-index: 999999;
+}
+
+.user .user-id {
+    position: absolute;
+    left: 1vw;
+    bottom: 0;
+    display: inline-block;
+    min-width: 4vw;
+    height: 1vw;
+    line-height: 1vw;
+    text-align: right;
+    padding: 0 0.5vw 0 .05vw;
+    font-size: 1vw;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    border-radius: 0.5vw;
+    border: 0.5vw solid #3f487d;
+    vertical-align: middle;
+}
+
+#alertBox {
+    width: 80vw;
+    min-height: 10vh;
+    opacity: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40vw;
+    transition: all 0.5s;
+    border-radius: 2vw;
+    padding-top: 35vw;
+    line-height: 2vw;
+    text-align: center;
+    font-size: 4vw;
+    color: rgba(0, 0, 0, 0.54);
+    box-shadow: 0 0 10vw rgba(0,0,0,0.3);
+    z-index: 100000;
+}
+
+#alertBox.success {
+    background: #fff url(http://cdn.lfzgame.com/images/alertBox_success.png) no-repeat center 15vw / 15vw 15vw;
+}
+
+#alertBox.error {
+    background: #fff url(http://cdn.lfzgame.com/images/alertBox_error.png) no-repeat center 15vw / 15vw 15vw;
+}
+
+#alertBox.puncherror {
+    background: #fff url(http://cdn.lfzgame.com/images/punch_caution.png) no-repeat center 15vw / 15vw 15vw;
+}
+
+#alertBox .context {
+    margin-bottom: 9vw;
+    padding: 0 5vw;
+}
+
+#alertBox .closed {
+    width: 10vw;
+    height: 3vw;
+    line-height: 4vw;
+    display: inline-block;
+    font-size: 3vw;
+    color: #b39851;
+    text-align: center;
+    border-top: 0.5vw solid #f5f5f5;
+}
+
+.alertBoxLay {
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    transition: all 0.5s;
+}
